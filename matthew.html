@@ -3,244 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book of Matthew Summary | Bible Study Hub</title>
+    <title>Book of Matthew Detailed Summary | Bible Study Hub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"> <!-- Example: Google Fonts -->
     <link rel="stylesheet" href="style.css">
     <!-- Optional: <link rel="stylesheet" href="matthew.css"> for book-specific styles -->
-    <meta name="description" content="A detailed summary of the Book of Matthew, including key themes, characters, historical context, quizzes, and lesson plans.">
+    <meta name="description" content="A detailed summary, historical context, key themes, and interactive quiz for the Gospel of Matthew.">
     <!-- Add Favicon links here -->
+    <!-- Add Social Media Meta Tags Here (Open Graph, Twitter Cards) -->
 </head>
 <body>
 
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="navbar container">
             <a href="index.html" class="site-title">Bible Study Hub</a>
             <div class="nav-links">
-                 <!-- Dropdown or main menu for Books of the Bible -->
+                 <!-- Dropdown Menu for Books -->
                 <div class="dropdown">
-                    <button class="dropbtn">Bible Books ▾</button> <!-- Added arrow -->
+                    <button class="dropbtn">Bible Books ▾</button>
                     <div class="dropdown-content">
+                        <!-- Old Testament -->
                         <a href="genesis.html">Genesis</a>
                         <a href="exodus.html">Exodus</a>
-                         <!-- Add all other Old Testament books here -->
-                        <hr> <!-- Separator -->
-                        <a href="matthew.html" class="active">Matthew</a> <!-- Highlight active page -->
+                        <a href="leviticus.html">Leviticus</a>
+                        <!-- ... Add ALL OT books ... -->
+                         <div class="dropdown-separator"></div>
+                        <!-- New Testament -->
+                        <a href="matthew.html" class="active">Matthew</a>
                         <a href="mark.html">Mark</a>
-                         <!-- Add all other New Testament books here -->
+                        <a href="luke.html">Luke</a>
+                        <a href="john.html">John</a>
+                         <!-- ... Add ALL NT books ... -->
                     </div>
                 </div>
                 <!-- Search Bar -->
                 <div class="search-container">
-                    <input type="search" id="site-search" placeholder="Search verses or topics...">
-                    <button>Search</button>
+                    <input type="search" id="site-search" placeholder="Search verses, topics...">
+                    <button id="search-button">Search</button>
                      <!-- Note: Search functionality requires JS/Backend -->
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container"> <!-- Added a container class for centering/max-width -->
-        <h1>The Gospel According to Matthew</h1>
+    <main class="container book-page"> <!-- Added classes for main content -->
+        <article class="book-article">
+            <h1>The Gospel According to Matthew</h1>
 
-        <!-- Feature 3: Bible Version Options -->
-        <section class="bible-version-selector card"> <!-- Added card class for styling -->
-            <h2>Bible Version</h2>
-            <label for="bible-version">Select Version:</label>
-            <select id="bible-version" name="bible-version">
-                <option value="ESV">ESV (English Standard Version)</option>
-                <option value="NKJV">NKJV (New King James Version)</option>
-                <option value="CSB">CSB (Christian Standard Bible)</option>
-                <option value="NASB">NASB (New American Standard Bible)</option>
-                <option value="NIV">NIV (New International Version)</option>
-            </select>
-            <p><small><em>Note: Real-time version switching requires significant JavaScript/Backend implementation. This selector is a placeholder.</em></small></p>
-        </section>
-
-        <!-- Feature 1: Detailed Book Summary -->
-        <section class="summary-section card">
-            <h2>Summary of Matthew</h2>
-            <p>The Gospel of Matthew presents Jesus Christ as Israel's promised Messiah and King. Written primarily for a Jewish audience, it emphasizes how Jesus fulfills Old Testament prophecies. Key themes include the Kingdom of Heaven (or Kingdom of God), Jesus' authority as the Son of God, righteousness, discipleship, and the inclusion of Gentiles into God's plan.</p>
-
-            <h3>Key Themes:</h3>
-            <ul>
-                <li>Jesus as the Messiah and King</li>
-                <li>The Kingdom of Heaven</li>
-                <li>Fulfillment of Old Testament Prophecy</li>
-                <li>Righteousness and the Law</li>
-                <li>Discipleship and the Cost</li>
-                <li>The Authority of Jesus</li>
-            </ul>
-
-            <h3>Key Events & Sections:</h3>
-            <ul>
-                <li>Genealogy and Birth of Jesus (Ch 1-2)</li>
-                <li>Baptism and Temptation of Jesus (Ch 3-4)</li>
-                <li>Sermon on the Mount (Ch 5-7)</li>
-                <li>Miracles demonstrating Jesus' authority (Ch 8-9)</li>
-                <li>Commissioning of the Twelve Disciples (Ch 10)</li>
-                <li>Parables of the Kingdom (Ch 13)</li>
-                <li>Peter's Confession and the Transfiguration (Ch 16-17)</li>
-                <li>Teaching on Divorce, Wealth, and Service (Ch 19-20)</li>
-                <li>Triumphal Entry and Temple Cleansing (Ch 21)</li>
-                <li>Olivet Discourse (End Times Prophecy) (Ch 24-25)</li>
-                <li>The Last Supper, Betrayal, and Arrest (Ch 26)</li>
-                <li>Trial, Crucifixion, and Death of Jesus (Ch 27)</li>
-                <li>Resurrection and the Great Commission (Ch 28)</li>
-            </ul>
-
-             <h3>Key Characters:</h3>
-             <ul>
-                <li>Jesus Christ</li>
-                <li>The Twelve Apostles (Simon Peter, Andrew, James, John, Philip, Bartholomew, Thomas, Matthew, James son of Alphaeus, Thaddaeus, Simon the Zealot, Judas Iscariot)</li>
-                <li>John the Baptist</li>
-                <li>Mary and Joseph</li>
-                <li>Pharisees and Sadducees</li>
-                <li>Pontius Pilate</li>
-                <li>Herod the Great / Herod Antipas</li>
-            </ul>
-
-            <h3>Key Teachings:</h3>
-            <ul>
-                <li>The Beatitudes (Matthew 5:3-12)</li>
-                <li>The Lord's Prayer (Matthew 6:9-13)</li>
-                <li>The Golden Rule (Matthew 7:12)</li>
-                <li>Parables explaining the Kingdom (e.g., Sower, Mustard Seed, Hidden Treasure)</li>
-                <li>Instructions on prayer, fasting, giving, forgiveness, and judging others.</li>
-                <li>The Great Commission: Making disciples of all nations (Matthew 28:19-20)</li>
-            </ul>
-             <!-- Engaging Visual Placeholder -->
-            <figure class="image-figure">
-                <img src="images/sermon_on_the_mount.jpg" alt="Illustration of the Sermon on the Mount">
-                <figcaption>The Sermon on the Mount (Matthew 5-7) contains core teachings of Jesus.</figcaption>
-            </figure>
-        </section>
-
-        <!-- Feature 2c: Historical Facts -->
-        <section class="historical-context card">
-            <h2>Historical Context</h2>
-            <h3>Authorship:</h3>
-            <p>Traditionally attributed to the Apostle Matthew, also known as Levi, a former tax collector called by Jesus to be one of the twelve disciples (Matthew 9:9).</p>
-            <h3>Date Written:</h3>
-            <p>Scholarly estimates vary, but a likely range is between 60 AD and 85 AD.</p>
-            <h3>Audience:</h3>
-            <p>Primarily written for a Jewish Christian audience. This is evident from the frequent references to Old Testament prophecies, Jewish customs, and terminology (like "Kingdom of Heaven" instead of "Kingdom of God," possibly out of reverence for God's name).</p>
-             <h3>Purpose:</h3>
-            <p>To demonstrate that Jesus of Nazareth is the promised Messiah, the King of the Jews, who fulfilled the prophecies of the Old Testament. It serves as a manual for discipleship, outlining the ethical teachings and mission given by Jesus.</p>
-            <h3>Cultural Significance:</h3>
-            <p>Matthew's Gospel bridges the Old and New Testaments, showing continuity in God's redemptive plan. It has profoundly shaped Christian understanding of Jesus' identity, teachings (especially ethics via the Sermon on the Mount), and the mission of the Church (the Great Commission).</p>
-        </section>
+            <section class="introduction card">
+                 <p>Welcome to the detailed study page for the Book of Matthew. Often considered the most structured of the Gospels, Matthew provides a compelling account of Jesus' life, teachings, death, and resurrection, framing Him as the long-awaited Messiah who fulfills Old Testament prophecies and inaugurates the Kingdom of Heaven.</p>
+                 <!-- Engaging Visual -->
+                <figure class="book-image">
+                    <img src="images/matthew-hero.jpg" alt="Illustration representing the Gospel of Matthew"> <!-- Placeholder Image -->
+                    <figcaption>Exploring the Gospel of Matthew.</figcaption>
+                </figure>
+            </section>
 
 
-        <!-- Feature 2b: Key Quotes -->
-        <section class="key-quotes card">
-            <h2>Key Quotes from Matthew</h2>
-            <blockquote class="bible-quote" data-reference="Matthew 5:3">
-                <p>"Blessed are the poor in spirit, for theirs is the kingdom of heaven."</p>
-                <cite>– Matthew 5:3 (ESV)</cite>
-                <span class="click-indicator">(Click to show more context)</span>
-            </blockquote>
-            <blockquote class="bible-quote" data-reference="Matthew 7:12">
-                 <p>"So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets."</p>
-                 <cite>– Matthew 7:12 (ESV)</cite>
-                 <span class="click-indicator">(Click to show more context)</span>
-            </blockquote>
-             <blockquote class="bible-quote" data-reference="Matthew 28:19-20">
-                <p>"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age."</p>
-                <cite>– Matthew 28:19-20 (ESV)</cite>
-                 <span class="click-indicator">(Click to show more context)</span>
-            </blockquote>
-            <!-- Add more quotes as needed -->
-             <p><small><em>Note: Quote context display requires JavaScript.</em></small></p>
-        </section>
+            <!-- Feature 3: Bible Version Options - More prominent -->
+            <section class="bible-version-selector card">
+                <h2>Select Bible Version</h2>
+                <label for="bible-version" class="sr-only">Select Version:</label> <!-- Accessible label -->
+                <select id="bible-version" name="bible-version" aria-label="Select Bible Version">
+                    <option value="ESV">ESV (English Standard Version)</option>
+                    <option value="NKJV">NKJV (New King James Version)</option>
+                    <option value="CSB">CSB (Christian Standard Bible)</option>
+                    <option value="NASB">NASB (New American Standard Bible)</option>
+                    <option value="NIV">NIV (New International Version)</option>
+                    <option value="KJV">KJV (King James Version)</option>
+                    <!-- Add more versions -->
+                </select>
+                <p class="note"><small><em>Note: Content display will not change in this basic version. Real-time version switching requires advanced JavaScript and likely a backend API or data source.</em></small></p>
+            </section>
 
+            <!-- Feature 1: Detailed Book Summary -->
+            <section class="detailed-summary card">
+                <h2>Detailed Summary</h2>
+                <div class="summary-content">
+                    <p>Matthew's Gospel is structured around five major discourses of Jesus, often concluding with the phrase "When Jesus finished these sayings..." (e.g., 7:28, 11:1, 13:53, 19:1, 26:1). This literary structure highlights Jesus' role as a new Moses, giving authoritative teaching to His people.</p>
 
-        <!-- Feature 2a: Interactive Quiz -->
-        <section class="interactive-quiz card">
-            <h2>Test Your Knowledge: Matthew Quiz</h2>
-            <form id="matthew-quiz-form">
-                <div class="quiz-question">
-                    <p><strong>1. Who is the traditional author of the Gospel of Matthew?</strong></p>
-                    <label><input type="radio" name="q1" value="a"> Mark</label><br>
-                    <label><input type="radio" name="q1" value="b"> Luke</label><br>
-                    <label><input type="radio" name="q1" value="c"> Matthew (Levi)</label><br>
-                    <label><input type="radio" name="q1" value="d"> John</label><br>
+                    <h3>Key Themes Explored:</h3>
+                    <ul class="theme-list">
+                        <li><strong>Jesus as Messiah and King:</strong> Matthew begins with Jesus' genealogy linking Him to Abraham and David, asserting His royal lineage and claim as the promised Messiah.</li>
+                        <li><strong>The Kingdom of Heaven:</strong> This central concept describes God's reign and the sphere where His will is done. Jesus' miracles, teachings, and actions demonstrate the presence and power of the Kingdom.</li>
+                        <li><strong>Fulfillment of Prophecy:</strong> Matthew frequently quotes the Old Testament to show how Jesus' birth, life, ministry, death, and resurrection fulfill ancient predictions about the Messiah.</li>
+                        <li><strong>Righteousness:</strong> Jesus emphasizes a righteousness that surpasses that of the scribes and Pharisees (Matt 5:20), focusing on inner attitudes and genuine devotion to God, not just external obedience.</li>
+                         <li><strong>Discipleship:</strong> The Gospel calls readers to follow Jesus, teaching them what it means to live under the authority of the King in the Kingdom of Heaven.</li>
+                    </ul>
+
+                     <h3>Outline of the Book:</h3>
+                     <div class="outline">
+                        <h4>I. Introduction: The Origin and Beginning of the King (Ch 1-4)</h4>
+                        <ul>
+                            <li>Genealogy and Birth of Jesus (1:1-2:23)</li>
+                            <li>Ministry of John the Baptist (3:1-12)</li>
+                            <li>Baptism and Temptation of Jesus (3:13-4:11)</li>
+                            <li>Jesus Begins His Ministry in Galilee (4:12-25)</li>
+                        </ul>
+                        <h4>II. The Manifesto of the King: The Sermon on the Mount (Ch 5-7)</h4>
+                         <ul>
+                             <li>The Beatitudes and the Kingdom Life (5:1-16)</li>
+                             <li>Jesus and the Law (5:17-48)</li>
+                             <li>Piety: Giving, Prayer, Fasting (6:1-18)</li>
+                             <li>Trust and Possessions (6:19-34)</li>
+                             <li>Relationships and the Two Ways (7:1-29)</li>
+                         </ul>
+                        <h4>III. The Power of the King (Ch 8-12)</h4>
+                         <ul>
+                             <li>Jesus' Miracles (Healing, Exorcism, Nature) (8:1-9:34)</li>
+                             <li>Mission and Opposition (9:35-11:30)</li>
+                             <li>Controversies with Religious Leaders (12:1-50)</li>
+                         </ul>
+                        <h4>IV. Parables of the Kingdom (Ch 13)</h4>
+                         <ul>
+                             <li>Parable of the Sower and its Meaning (13:1-23)</li>
+                             <li>Kingdom Parables: Weeds, Mustard Seed, Leaven, Treasure, Pearl, Net (13:24-52)</li>
+                         </ul>
+                         <h4>V. The Progress and Principles of the Kingdom (Ch 14-25)</h4>
+                         <ul>
+                            <li>Feeding the Five Thousand, Walking on Water (14:13-36)</li>
+                            <li>Traditions vs. Commandments, Faith of a Canaanite Woman (15:1-28)</li>
+                            <li>Peter's Confession, Prediction of Death, Transfiguration (16:13-17:27)</li>
+                            <li>Teaching on Humility, Forgiveness, Discipline (Ch 18)</li>
+                             <li>Teaching on Divorce, Children, Rich Young Man (Ch 19)</li>
+                             <li>Parable of the Workers in the Vineyard, Blind Men Healed (Ch 20)</li>
+                             <li>Triumphal Entry, Cleansing the Temple (Ch 21)</li>
+                             <li>Parables of Judgment, Authority Challenged (Ch 21-22)</li>
+                             <li>Woe to the Scribes and Pharisees (Ch 23)</li>
+                            <li>Olivet Discourse: Signs of the End Times and Coming (Ch 24-25)</li>
+                         </ul>
+                         <h4>VI. The Passion of the King: Suffering and Triumph (Ch 26-28)</h4>
+                          <ul>
+                              <li>Plot to Kill Jesus, Anointing, Last Supper, Gethsemane (Ch 26)</li>
+                              <li>Arrest, Trial, Crucifixion, Burial (Ch 27)</li>
+                              <li>Resurrection, Great Commission (Ch 28)</li>
+                          </ul>
+                     </div> <!-- End outline -->
+
+                     <h3>Key Characters Highlighted:</h3>
+                     <ul class="character-list">
+                        <li><strong>Jesus Christ:</strong> Presented as the Son of God, Messiah, and King. His words and actions are the focus.</li>
+                        <li><strong>The Twelve Apostles:</strong> Called and commissioned by Jesus to participate in His ministry. Peter plays a prominent role.</li>
+                        <li><strong>John the Baptist:</strong> The forerunner who prepares the way for the King.</li>
+                        <li><strong>Religious Leaders (Pharisees, Sadducees, Scribes):</strong> Often oppose Jesus, highlighting the conflict between the old ways and the new Kingdom.</li>
+                        <li><strong>Pontius Pilate:</strong> The Roman governor who sentences Jesus to crucifixion.</li>
+                        <li><strong>Mary and Joseph:</strong> Jesus' earthly parents, emphasizing His lineage.</li>
+                    </ul>
+
+                     <p class="callout"><strong>Dive Deeper:</strong> Matthew uniquely includes several parables and teachings not found in the other Gospels, such as the Parable of the Weeds, the Parable of the Unforgiving Servant, and the detailed instructions on church discipline in chapter 18. Studying these passages provides unique insights into Jesus' Kingdom ethics and community expectations.</p>
+
+                </div> <!-- End summary-content -->
+            </section>
+
+             <!-- Feature 2c: Historical Facts -->
+            <section class="historical-context card">
+                <h2>Historical Context & Background</h2>
+                <div class="context-details">
+                     <div class="context-item">
+                        <h3><i class="icon-pencil"></i> Authorship:</h3> <!-- Placeholder icon -->
+                        <p>Traditional Christian belief attributes the Gospel to Matthew (also called Levi), one of the twelve apostles, a former tax collector. This view is supported by early church fathers like Papias, Irenaeus, and Origen, who claimed Matthew compiled Jesus' sayings (logia) in Aramaic or Hebrew, which were then translated or incorporated into the Greek Gospel we have today. While some modern scholars debate the direct authorship by the apostle, the Gospel clearly reflects a perspective deeply familiar with Jewish customs and scriptures.</p>
+                     </div>
+                     <div class="context-item">
+                        <h3><i class="icon-calendar"></i> Date Written:</h3> <!-- Placeholder icon -->
+                        <p>Pinpointing the exact date is debated. Estimates range from the 50s AD to the late 80s or 90s AD. A widely accepted range is <strong>65-85 AD</strong>. Evidence suggesting a later date includes the apparent use of Mark's Gospel (written around 60-70 AD) and references that some interpret as allusions to the destruction of the Jerusalem Temple in 70 AD (though these prophecies could be genuine foresight by Jesus). An earlier date is supported by the tradition linking it to an apostle and its Jewish focus, which might fit better before the complete split between Judaism and Christianity.</p>
+                    </div>
+                    <div class="context-item">
+                        <h3><i class="icon-users"></i> Audience:</h3> <!-- Placeholder icon -->
+                        <p>The Gospel's content and style strongly suggest it was written primarily for a <strong>Jewish Christian audience</strong>. Matthew assumes his readers understand Jewish customs (like handwashing rituals, though he does explain some things like the Mount of Olives prophecy in 24:3), references the Old Testament extensively using fulfillment formulas ("this was to fulfill what was spoken by the prophet..."), and presents Jesus' lineage through Abraham and David. The audience was likely dealing with questions about how Jesus related to the Law and the Prophets, and how the Kingdom of God was unfolding in light of the Messiah's coming and the changing religious landscape.</p>
+                    </div>
+                     <div class="context-item">
+                        <h3><i class="icon-purpose"></i> Purpose:</h3> <!-- Placeholder icon -->
+                        <p>Matthew wrote to persuade his Jewish audience that <strong>Jesus is the Messiah</strong>, the Son of David, the King of Israel, and the Son of God, who fulfills the promises of the Old Testament. He also aimed to provide a manual for Christian discipleship and the life of the church community, outlining Jesus' teachings on ethics, prayer, mission, and eschatology.</p>
+                     </div>
+                </div> <!-- End context-details -->
+            </section>
+
+            <!-- Feature 2b: Key Quotes -->
+            <section class="key-quotes card">
+                <h2>Key Bible Verses</h2>
+                <p>Click on a verse to see a bit more context or notes.</p>
+                <div class="quotes-list">
+                    <blockquote class="bible-quote" data-reference="Matthew 5:3">
+                        <p>"Blessed are the poor in spirit, for theirs is the kingdom of heaven."</p>
+                        <cite>– Matthew 5:3 (ESV)</cite>
+                         <div class="quote-context">
+                             <p><em>Context/Notes:</em> This is the first of the Beatitudes, launching the Sermon on the Mount. It describes a spiritual humility and dependence on God as the entry point to the Kingdom.</p>
+                              <p><small>[Click the verse citation for more context/commentary - *Feature to be fully built*]</small></p>
+                         </div>
+                    </blockquote>
+                    <blockquote class="bible-quote" data-reference="Matthew 7:12">
+                         <p>"So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets."</p>
+                         <cite>– Matthew 7:12 (ESV)</cite>
+                          <div class="quote-context">
+                             <p><em>Context/Notes:</em> Known as the Golden Rule, this verse summarizes the ethical implications of the Law and the Prophets from a Kingdom perspective.</p>
+                             <p><small>[Click the verse citation for more context/commentary - *Feature to be fully built*]</small></p>
+                         </div>
+                    </blockquote>
+                     <blockquote class="bible-quote" data-reference="Matthew 28:19-20">
+                        <p>"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age."</p>
+                        <cite>– Matthew 28:19-20 (ESV)</cite>
+                         <div class="quote-context">
+                             <p><em>Context/Notes:</em> The "Great Commission," Jesus' final instruction to His disciples, sending them out to make disciples globally.</p>
+                              <p><small>[Click the verse citation for more context/commentary - *Feature to be fully built*]</small></p>
+                         </div>
+                    </blockquote>
+                     <blockquote class="bible-quote" data-reference="Matthew 11:28">
+                         <p>"Come to me, all who labor and are heavy laden, and I will give you rest."</p>
+                         <cite>– Matthew 11:28 (ESV)</cite>
+                          <div class="quote-context">
+                             <p><em>Context/Notes:</em> Part of Jesus' invitation after His rebuke of towns that did not repent. A powerful call to find spiritual rest in Him.</p>
+                              <p><small>[Click the verse citation for more context/commentary - *Feature to be fully built*]</small></p>
+                         </div>
+                    </blockquote>
+                    <!-- Add more important Matthew quotes -->
+                </div> <!-- End quotes-list -->
+            </section>
+
+            <!-- Feature 2a: Interactive Quiz -->
+            <section class="interactive-quiz card">
+                <h2>Test Your Knowledge: Matthew Quiz</h2>
+                <p>See how well you understood the key details of the Book of Matthew.</p>
+                <form id="matthew-quiz-form">
+                    <div class="quiz-question" data-correct="c">
+                        <p><strong>1. According to tradition, what was Matthew's profession before following Jesus?</strong></p>
+                        <label><input type="radio" name="q1" value="a"> Fisherman</label><br>
+                        <label><input type="radio" name="q1" value="b"> Tentmaker</label><br>
+                        <label><input type="radio" name="q1" value="c"> Tax Collector</label><br>
+                        <label><input type="radio" name="q1" value="d"> Shepherd</label><br>
+                    </div>
+
+                    <div class="quiz-question" data-correct="true">
+                        <p><strong>2. True or False: Matthew emphasizes Jesus' fulfillment of Old Testament prophecy more than the other Gospels.</strong></p>
+                        <label><input type="radio" name="q2" value="true"> True</label><br>
+                        <label><input type="radio" name="q2" value="false"> False</label><br>
+                    </div>
+
+                     <div class="quiz-question" data-correct="d">
+                        <p><strong>3. What major block of teaching by Jesus is found in Matthew chapters 5-7?</strong></p>
+                        <label><input type="radio" name="q3" value="a"> The Olivet Discourse</label><br>
+                        <label><input type="radio" name="q3" value="b"> The Upper Room Discourse</label><br>
+                        <label><input type="radio" name="q3" value="c"> Parables of the Kingdom</label><br>
+                        <label><input type="radio" name="q3" value="d"> The Sermon on the Mount</label><br>
+                    </div>
+
+                     <div class="quiz-question" data-correct="a">
+                        <p><strong>4. The Great Commission, where Jesus tells His disciples to make disciples of all nations, is found at the end of which chapter in Matthew?</strong></p>
+                        <label><input type="radio" name="q4" value="a"> Chapter 28</label><br>
+                        <label><input type="radio" name="q4" value="b"> Chapter 24</label><br>
+                        <label><input type="radio" name="q4" value="c"> Chapter 13</label><br>
+                        <label><input type="radio" name="q4" value="d"> Chapter 5</label><br>
+                    </div>
+                     <!-- Add many more questions -->
+
+                    <button type="submit" class="btn">Submit Quiz</button>
+                </form>
+                <div id="quiz-results" class="quiz-results" aria-live="polite">
+                    <!-- Quiz feedback will be displayed here by JavaScript -->
                 </div>
+                 <p class="note"><small><em>Note: Quiz scoring and feedback are handled by JavaScript. Results are not stored unless a backend system is implemented.</em></small></p>
+            </section>
 
-                <div class="quiz-question">
-                    <p><strong>2. True or False: The Sermon on the Mount is found in the Book of Matthew.</strong></p>
-                    <label><input type="radio" name="q2" value="true"> True</label><br>
-                    <label><input type="radio" name="q2" value="false"> False</label><br>
+            <!-- Feature 2d: Lesson Plans -->
+            <section class="lesson-plans card">
+                <h2>Lesson Plan Ideas & Study Guides</h2>
+                <p>These resources can help guide teaching, group discussions, or personal study:</p>
+                <ul class="resource-list">
+                    <li><a href="#" onclick="alert('Link needs to be added!'); return false;" class="resource-link"><i class="icon-download"></i> Lesson Plan: Introduction to Matthew (Ch 1-4) - [Link to PDF/resource]</a></li>
+                    <li><a href="#" onclick="alert('Link needs to be added!'); return false;" class="resource-link"><i class="icon-download"></i> Study Guide: Key Teachings from the Sermon on the Mount (Ch 5-7) - [Link to PDF/resource]</a></li>
+                    <li><a href="#" onclick="alert('Link needs to be added!'); return false;" class="resource-link"><i class="icon-download"></i> Discussion Questions on the Parables in Matthew 13 - [Link to PDF/resource]</a></li>
+                    <li><a href="#" onclick="alert('Link needs to be added!'); return false;" class="resource-link"><i class="icon-download"></i> Lesson Plan: The Significance of the Great Commission (Ch 28) - [Link to PDF/resource]</a></li>
+                    <!-- Add many more lesson plan links or descriptions -->
+                </ul>
+                 <p class="note"><small><em>Note: Resource files (PDFs, external links) need to be created and linked. Icons are placeholders.</em></small></p>
+            </section>
+
+            <!-- Feature 5: User Engagement - Related Resources -->
+            <section class="related-resources card">
+                <h2>Further Study & External Resources</h2>
+                <p>Explore these reputable resources for a deeper dive into the Book of Matthew:</p>
+                <ul class="resource-list">
+                    <li><a href="https://www.biblegateway.com/passage/?search=Matthew+1-28&version=ESV" target="_blank" rel="noopener noreferrer" class="resource-link"><i class="icon-link"></i> Read the Full Text of Matthew (ESV) on Bible Gateway</a></li>
+                    <li><a href="https://bibleproject.com/explore/video/matthew-1-13/" target="_blank" rel="noopener noreferrer" class="resource-link"><i class="icon-video"></i> BibleProject Overview Video (Part 1: Ch 1-13)</a></li>
+                    <li><a href="https://bibleproject.com/explore/video/matthew-14-28/" target="_blank" rel="noopener noreferrer" class="resource-link"><i class="icon-video"></i> BibleProject Overview Video (Part 2: Ch 14-28)</a></li>
+                     <li><a href="https://www.blueletterbible.org/study/intros/matthew_intro.cfm" target="_blank" rel="noopener noreferrer" class="resource-link"><i class="icon-notes"></i> Introduction to Matthew (Blue Letter Bible)</a></li>
+                     <li><a href="https://www.gty.org/library/resources/study-guides/40_00" target="_blank" rel="noopener noreferrer" class="resource-link"><i class="icon-notes"></i> Grace to You Study Guides for Matthew</a></li>
+                    <!-- Add links to reputable commentaries, articles, videos, etc. -->
+                </ul>
+            </section>
+
+            <!-- Feature 5: User Engagement - Discussion/Comments -->
+            <section class="discussion-section card">
+                <h2>Join the Discussion</h2>
+                <p>Share your insights, ask questions, or leave a comment about your study of the Book of Matthew.</p>
+                <div id="comment-section">
+                    <!-- Comment system integration goes here -->
+                    <p><em>(This section requires a backend system or integration with a third-party commenting service like Disqus or IntenseDebate to store and display comments.)</em></p>
+                    <textarea placeholder="Enter your comment here..." rows="4" aria-label="Enter your comment"></textarea><br>
+                    <button class="btn" disabled>Post Comment</button> <!-- Disabled button as it needs backend -->
                 </div>
+            </section>
 
-                 <div class="quiz-question">
-                    <p><strong>3. Matthew primarily presents Jesus as the...?</strong></p>
-                    <label><input type="radio" name="q3" value="a"> Suffering Servant</label><br>
-                    <label><input type="radio" name="q3" value="b"> Great High Priest</label><br>
-                    <label><input type="radio" name="q3" value="c"> Son of Man</label><br>
-                    <label><input type="radio" name="q3" value="d"> Promised Messiah and King</label><br>
-                </div>
-                 <!-- Add more questions (MC, T/F) here -->
-
-                <button type="submit">Submit Quiz</button>
-            </form>
-            <div id="quiz-results" class="quiz-results" aria-live="polite">
-                <!-- Quiz feedback will be displayed here by JavaScript -->
-            </div>
-             <p><small><em>Note: Quiz scoring and feedback requires JavaScript.</em></small></p>
-        </section>
-
-        <!-- Feature 2d: Lesson Plans -->
-        <section class="lesson-plans card">
-            <h2>Lesson Plan Ideas</h2>
-            <p>These resources can help guide teaching or group discussions on Matthew:</p>
-            <ul>
-                <li><a href="#" onclick="alert('Link needs to be added!'); return false;">Lesson Plan: Understanding the Sermon on the Mount (Matthew 5-7) - [Link to PDF/resource]</a></li>
-                <li><a href="#" onclick="alert('Link needs to be added!'); return false;">Lesson Plan: The Parables of the Kingdom (Matthew 13) - [Link to PDF/resource]</a></li>
-                <li><a href="#" onclick="alert('Link needs to be added!'); return false;">Lesson Plan: The Great Commission and Discipleship (Matthew 28) - [Link to PDF/resource]</a></li>
-                <!-- Add more lesson plan links or descriptions -->
-            </ul>
-             <p><small><em>Note: Resource files (PDFs, etc.) need to be created and linked.</em></small></p>
-        </section>
-
-        <!-- Feature 5: User Engagement - Related Resources -->
-        <section class="related-resources card">
-            <h2>Further Study</h2>
-            <p>Explore these resources for a deeper dive into the Book of Matthew:</p>
-            <ul>
-                <li><a href="https://www.biblegateway.com/passage/?search=Matthew+1&version=ESV" target="_blank" rel="noopener noreferrer">Read Matthew on Bible Gateway</a></li>
-                <li><a href="https://bibleproject.com/explore/video/matthew-1-13/" target="_blank" rel="noopener noreferrer">BibleProject Overview Video (Part 1)</a></li>
-                <li><a href="https://bibleproject.com/explore/video/matthew-14-28/" target="_blank" rel="noopener noreferrer">BibleProject Overview Video (Part 2)</a></li>
-                 <li><a href="https://www.blueletterbible.org/commentaries/" target="_blank" rel="noopener noreferrer">Commentaries on Matthew (Blue Letter Bible)</a></li>
-                <!-- Add links to reputable commentaries, articles, videos, etc. -->
-            </ul>
-        </section>
-
-        <!-- Feature 5: User Engagement - Discussion/Comments -->
-        <section class="discussion-section card">
-            <h2>Discussion</h2>
-            <p>What are your key takeaways from the Book of Matthew? Share your thoughts, questions, and insights below.</p>
-            <div id="comment-section">
-                <!-- Comment system integration (e.g., Disqus embed code, or custom backend form/display) goes here -->
-                <p><em>(Comment feature requires a backend system or third-party service like Disqus)</em></p>
-                 <textarea placeholder="Enter your comment here..."></textarea><br>
-                 <button disabled>Post Comment</button> <!-- Disabled button as it needs backend -->
-            </div>
-        </section>
-
+        </article> <!-- End book-article -->
     </main>
 
-    <footer>
-        <p>© 2023 [Your Website Name]. All rights reserved.</p>
-        <p>
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact</a>
-        </p>
-         <!-- Note: privacy, about, contact pages need to be created -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2023 [Your Website Name]. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+             <!-- Note: privacy, about, contact pages need to be created -->
+        </div>
     </footer>
 
     <!-- JavaScript Files -->
-    <script src="script.js" defer></script> <!-- General site interactivity (Quotes) -->
-    <script src="quiz.js" defer></script> <!-- Quiz handling logic -->
+    <script src="js/script.js" defer></script> <!-- General site interactivity -->
+    <script src="js/quiz.js" defer></script> <!-- Quiz handling logic -->
     <!-- Add other JS files if needed (e.g., for version switching, search) -->
 
 </body>
