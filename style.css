@@ -1,0 +1,409 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Use a common font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+.container {
+    max-width: 900px; /* Max width for content */
+    margin: 20px auto; /* Center the container and add vertical margin */
+    padding: 0 20px; /* Horizontal padding on smaller screens */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out title and links */
+    align-items: center;
+    max-width: 900px; /* Match container width */
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.site-title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #388E3C; /* Darker green on hover/active */
+    border-radius: 4px;
+}
+
+/* Dropdown Navigation */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden; /* Hide hr overflow */
+}
+
+.dropdown-content a {
+    color: #333; /* Dark text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #e9e9e9; /* Lighter grey on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: Style for separator in dropdown */
+.dropdown-content hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 5px 0;
+}
+
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=search] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    background: #5cb85c; /* A different green */
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-container button:hover {
+    background: #4cae4c;
+}
+
+
+/* Main Content Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+.card { /* Just an alias for section styling if needed */
+     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #333; /* Dark grey headings */
+}
+
+h2 {
+    border-bottom: 2px solid #eee; /* Subtle separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Images */
+.image-figure {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px; /* Control image size */
+}
+
+.image-figure img {
+    display: block; /* Remove extra space below image */
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 4px;
+}
+
+.image-figure figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Quotes */
+blockquote.bible-quote {
+    background-color: #e0f2f7; /* Light blue background */
+    border-left: 5px solid #0288d1; /* Blue border */
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    position: relative; /* Needed for absolute positioning of indicator */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.2s ease;
+}
+
+blockquote.bible-quote:hover {
+    background-color: #b3e5fc; /* Lighter blue on hover */
+}
+
+blockquote.bible-quote p {
+    margin: 0 0 5px 0;
+    font-style: normal; /* Reset italic for quote text */
+}
+
+blockquote.bible-quote cite {
+    display: block; /* Put citation on new line */
+    text-align: right;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.bible-quote .click-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.7em;
+    color: #0288d1;
+    opacity: 0.7;
+}
+
+
+/* Quiz Styling */
+#matthew-quiz-form {
+    margin-top: 20px;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff9c4; /* Light yellow */
+    border: 1px solid #fbc02d; /* Darker yellow border */
+    border-radius: 4px;
+}
+
+.quiz-question p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block; /* Each answer on new line */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#matthew-quiz-form button {
+    display: block; /* Full width button */
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9800; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#matthew-quiz-form button:hover {
+    background-color: #f57c00; /* Darker orange */
+}
+
+.quiz-results {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 1.5em; /* Reserve space */
+}
+
+.quiz-results.correct {
+    background-color: #dcedc8; /* Light green */
+    border: 1px solid #8bc34a; /* Green border */
+}
+
+.quiz-results.incorrect {
+     background-color: #ffcdd2; /* Light red */
+    border: 1px solid #f44336; /* Red border */
+}
+
+
+/* Lesson Plans & Resources */
+.lesson-plans ul,
+.related-resources ul {
+    list-style: disc; /* Default bullets */
+}
+
+.lesson-plans ul li a,
+.related-resources ul li a {
+    color: #0288d1; /* Blue links */
+    text-decoration: none;
+}
+
+.lesson-plans ul li a:hover,
+.related-resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Discussion/Comments */
+#comment-section textarea {
+    width: calc(100% - 24px); /* Adjust width for padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+    min-height: 100px;
+    resize: vertical; /* Allow vertical resize */
+}
+
+#comment-section button {
+     padding: 10px 15px;
+    background-color: #757575; /* Grey for disabled button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: not-allowed; /* Indicate disabled */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark grey footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #aaa; /* Lighter grey links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+         flex-direction: column;
+         align-items: flex-start;
+         width: 100%; /* Take full width */
+         margin-top: 10px;
+    }
+
+    .site-title {
+         margin-bottom: 10px;
+    }
+
+     .dropdown {
+         margin-right: 0;
+         margin-bottom: 10px;
+         width: 100%; /* Full width for dropdown */
+     }
+
+     .dropdown-content {
+         position: static; /* Make dropdown static on smaller screens */
+         box-shadow: none;
+         min-width: auto;
+         width: 100%;
+         border: none;
+     }
+
+     .dropdown-content a {
+         padding-left: 30px; /* Indent dropdown items */
+     }
+
+     .search-container {
+         width: 100%; /* Full width for search */
+         margin-top: 10px;
+     }
+
+     .search-container input[type=search] {
+         flex-grow: 1; /* Make input fill space */
+     }
+
+    .container {
+        padding: 0 10px;
+    }
+
+     section {
+         padding: 15px;
+     }
+}
